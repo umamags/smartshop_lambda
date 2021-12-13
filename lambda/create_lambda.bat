@@ -1,0 +1,1 @@
+aws lambda create-function --region us-west-2 --function-name mySecondFunction --zip-file fileb://mySecondFunction.zip --role arn:aws:iam::507506230130:role/basic-lambda-role --handler index.handler --runtime nodejs14.x --memory-size 128

@@ -1,0 +1,26 @@
+eb://mySecondFunction.zip --role arn:aws:iam::507506230130:role/basic-lambda-role --handler index.handler --runtime nodejs14.x --memory-size 128
+{
+    "FunctionName": "mySecondFunction",
+    "FunctionArn": "arn:aws:lambda:us-west-2:507506230130:function:mySecondFunction",
+    "Runtime": "nodejs14.x",
+    "Role": "arn:aws:iam::507506230130:role/basic-lambda-role",
+    "Handler": "index.handler",
+    "CodeSize": 405,
+    "Description": "",
+    "Timeout": 3,
+    "MemorySize": 128,
+    "LastModified": "2021-12-12T00:44:28.993+0000",
+    "CodeSha256": "aV9kkXQByRJqcXSJNaOv7b/hFY1xoTVKK+89N22hmPo=",
+    "Version": "$LATEST",
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "bc8481fe-7191-4277-bc24-550cb92bb3e3",
+    "State": "Pending",
+    "StateReason": "The function is being created.",
+    "StateReasonCode": "Creating",
+    "PackageType": "Zip",
+    "Architectures": [
+        "x86_64"
+    ]
+}

@@ -1,0 +1,1 @@
+aws lambda invoke --invocation-type RequestResponse --cli-binary-format raw-in-base64-out --function-name mySecondFunction --region us-west-2 --log-type Tail --payload '{"username": "JohnSmith"}'

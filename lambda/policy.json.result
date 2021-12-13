@@ -1,0 +1,22 @@
+C:\workspace\nodejs\lambda>aws iam create-role --role-name basic-lambda-role --assume-role-policy-document file://policy.json
+{
+    "Role": {
+        "Path": "/",
+        "RoleName": "basic-lambda-role",
+        "RoleId": "AROAXMKN2QNZLBW44NTNA",
+        "Arn": "arn:aws:iam::507506230130:role/basic-lambda-role",
+        "CreateDate": "2021-12-12T00:38:25+00:00",
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                        "Service": "lambda.amazonaws.com"
+                    },
+                    "Action": "sts:AssumeRole"
+                }
+            ]
+        }
+    }
+}
