@@ -1,0 +1,1 @@
+aws apigateway create-rest-api --name "API Gateway Hello World" --region us-east-1

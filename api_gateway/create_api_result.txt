@@ -1,0 +1,13 @@
+C:\workspace\smartshop_lambda\api_gateway>aws apigateway create-rest-api --name "API Gateway Hello World" --region us-east-1
+{
+    "id": "i15a85qph0",
+    "name": "API Gateway Hello World",
+    "createdDate": "2021-12-13T21:57:20-06:00",
+    "apiKeySource": "HEADER",
+    "endpointConfiguration": {
+        "types": [
+            "EDGE"
+        ]
+    },
+    "disableExecuteApiEndpoint": false
+}
