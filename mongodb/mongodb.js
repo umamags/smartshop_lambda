@@ -12,7 +12,7 @@ const options ={
     definition: {
         openapi : '3.0.0',
         info : {
-            title: 'Node JS API Project for mongodb',
+            title: 'bNode JS API Project for mongod',
             version: '1.0.0'
         },
         servers:[
