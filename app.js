@@ -31,5 +31,26 @@ app.post("/books", (request, response) => {
     });
 });
 
-//curl -X POST -H 'content-type:application/json' -d '{"id":"4","title":"Book 4"}' http://localhost:5000/books
+app.get("/books", (request, response) => {
+    collection.find({}).toArray((error, result) => {
+        if(error) {
+            return response.status(500).send(error);
+        }
+        response.send(result);
+    });
+});
+
+app.get("/books/:id", (request, response) => {
+    collection.findOne({ "_id": new ObjectId(request.params.id) }, (error, result) => {
+        if(error) {
+            return response.status(500).send(error);
+        }
+        response.send(result);
+    });
+});
+
+//node app.js
 //git bash
+//curl -X POST -H 'content-type:application/json' -d '{"id":"4","title":"Book 4"}' http://localhost:5000/books
+//curl -X GET http://localhost:5000/books
+//curl -X GET http://localhost:5000/books/61c5d34d317d9db1f7630ef2
